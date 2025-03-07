@@ -17,7 +17,7 @@ async function fetchCourses() {
 }
 
 async function fetchNotes(courseName, courseDiv) {
-    const response = await fetch(`https://api.github.com/repos/${repo}/contents/courses/${courseName}/notes`);
+    const response = await fetch(`https://api.github.com/repos/${repo}/contents/courses/${courseName}/NOTES`);
     const data = await response.json();
 
     data.forEach(note => {
