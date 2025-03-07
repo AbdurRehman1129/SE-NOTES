@@ -1,0 +1,16 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+h1 {
+    text-align: center;
+}
+.note-link {
+    display: block;
+    margin: 5px 0;
+    color: #0366d6;
+    text-decoration: none;
+}
+.note-link:hover {
+    text-decoration: underline;
+}
