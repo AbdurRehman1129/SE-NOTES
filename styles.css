@@ -1,16 +1,190 @@
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    overflow-x: hidden;
 }
-h1 {
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header */
+header {
+    background: #004879;
+    color: #fff;
+    padding: 20px 0;
     text-align: center;
+    animation: fadeInDown 1s ease-in-out;
 }
-.note-link {
-    display: block;
-    margin: 5px 0;
-    color: #0366d6;
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Courses Section */
+#courses {
+    padding: 40px 0;
+    background: #067158;
+    text-align: center;
+    color: #fff;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+#courses h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.course-button {
+    display: inline-block;
+    margin: 10px;
+    padding: 15px 30px;
+    background: #73b3df;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background 0.3s ease, transform 0.3s ease;
+    text-transform: uppercase;
+}
+
+.course-button:hover {
+    background: #004879;
+    transform: scale(1.05);
+}
+
+/* Notes Page */
+.notes-container {
+    padding: 20px;
+    background: #130101;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    margin-top: 20px;
+    animation: slideInRight 1s ease-in-out;
+}
+
+.note {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.note:last-child {
+    border-bottom: none;
+}
+
+.note a {
+    color: #0080ff;
     text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
-.note-link:hover {
-    text-decoration: underline;
+
+.note a:hover {
+    color: #004879;
+    transform: translateX(5px);
+}
+
+.download-button {
+    padding: 8px 15px;
+    background: #93c9eed5;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 0.9em;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.download-button:hover {
+    background: #218838;
+    transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: #ffffff;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+footer h2 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+.social-links a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 1.5em;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #0080ff;
+    transform: translateY(-5px);
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
