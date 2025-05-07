@@ -9,13 +9,20 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 <body>
-    <div id="new-site-banner" class="animate__animated animate__slideInDown">
-        <div class="banner-content">
-            <span>We have a new website for assignments! Check it out at: </span>
-            <a href="https://cms-assignment-checker.vercel.app/" target="_blank">Live Assignments</a>
-            <button id="close-banner" aria-label="Close banner">&times;</button>
+    <div id="popup-overlay" class="popup-overlay">
+        <div class="popup-container animate__animated animate__zoomIn">
+            <div class="popup-content">
+                <h3>New Assignments Website Available!</h3>
+                <p>We've launched a dedicated website for assignments. Click below to visit the new site:</p>
+                <a href="https://your-new-assignments-site.vercel.app" class="popup-button" target="_blank">Go to New Site</a>
+                <p class="popup-note">(This site will remain available for notes)</p>
+                <button id="close-popup" class="popup-close-btn" aria-label="Close popup">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
         </div>
     </div>
+
     <!-- Header -->
     <header class="animate__animated animate__fadeInDown">
         <div class="container">
