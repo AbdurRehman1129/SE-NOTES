@@ -8,7 +8,81 @@ body {
     background-color: #f4f4f4;
     overflow-x: hidden;
 }
+/* Popup Styles */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    backdrop-filter: blur(5px);
+}
 
+.popup-container {
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    max-width: 500px;
+    width: 90%;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+    position: relative;
+    text-align: center;
+}
+
+.popup-content h3 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.popup-content p {
+    color: #34495e;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.popup-button {
+    display: inline-block;
+    background-color: #3498db;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 10px 0;
+    transition: background-color 0.3s;
+}
+
+.popup-button:hover {
+    background-color: #2980b9;
+}
+
+.popup-note {
+    font-size: 0.8rem;
+    color: #7f8c8d;
+    margin-top: 10px;
+}
+
+.popup-close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #7f8c8d;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.popup-close-btn:hover {
+    color: #e74c3c;
+}
 .container {
     width: 80%;
     margin: auto;
